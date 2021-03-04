@@ -1,2 +1,0 @@
-class DuplicateCNP(Exception):
-    pass
