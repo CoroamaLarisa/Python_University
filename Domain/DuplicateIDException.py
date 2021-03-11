@@ -1,0 +1,2 @@
+class DuplicateIDException(Exception):
+    pass
