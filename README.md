@@ -1,18 +1,19 @@
 # Python_University
 Project done for the Programming and Algorithm course
 
-Proiectul gestioneaza un Cinema si are urmatoarele functionalitati valabile:
-
-1. CRUD film: id, titlu, an apariție, preț bilet, în program. Prețul să fie strict pozitiv. 
-2. CRUD card client: id, nume, prenume, CNP, data nașterii (dd.mm.yyyy), data înregistrării
-(dd.mm.yyyy), puncte acumulate. CNP-ul trebuie să fie unic.
-3. CRUD rezervare: id, id_film, id_card_client (poate fi nul), data și ora. Clientul
-acumulează pe card 10% (parte întreagă) din prețul filmului Se tipărește numărul total
-de puncte de pe card. Rezervarea se poate face doar dacă filmul este încă în program.
-4. Căutare filme și clienți după titlu, nume, prenume, CNP etc. Căutare full text.
-5. Afișarea tuturor rezervărilor dintr-un interval de ore dat, indiferent de zi.
-6. Afișarea filmelor ordonate descrescător după numărul de rezervări.
-7. Afișarea cardurilor client ordonate descrescător după numărul de puncte de pe card.
-8. Ștergerea tuturor rezervărilor dintr-un anumit interval de zile.
-9. Incrementarea cu o valoare dată a punctelor de pe toate cardurile a căror zi de naștere
-se află într-un interval dat. 
+Proiectul gestioneaza un Service auto si are urmatoarele functionalitati:
+  1. CRUD mașină: id, model, an achiziție, nr. km, în garanție. Km și anul fabricației să fie
+  strict pozitivi.
+  2. CRUD card client: id, nume, prenume, CNP, data nașterii (dd.mm.yyyy), data înregistrării
+  (dd.mm.yyyy). CNP-ul trebuie să fie unic.
+  3. CRUD tranzacție: id, id_mașină, id_card_client (poate fi nul), sumă piese, sumă
+  manoperă, data și ora. Dacă există un card client, atunci aplicați o reducere de 10%
+  pentru manoperă. Dacă mașina este în garanție, atunci piesele sunt gratis. Se tipărește
+  prețul plătit și reducerile acordate.
+  4. Căutare mașini și clienți după model, an fabricație, prenume, CNP etc. Căutare full text.
+  5. Afișarea tuturor tranzacțiilor cu suma cuprinsă într-un interval dat.
+  6. Afișarea mașinilor ordonate descrescător după suma obținută pe manoperă.
+  7. Afișarea cardurilor client ordonate descrescător după valoarea reducerilor obținute.
+  8. Ștergerea tuturor tranzacțiilor dintr-un anumit interval de zile.
+  9. Actualizarea garanției la fiecare mașină: o mașină este în garanție dacă și numai dacă
+  are maxim 3 ani și maxim 60 000 de km.
