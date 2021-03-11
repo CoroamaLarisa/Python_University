@@ -1,0 +1,2 @@
+class DuplicateCNPException(Exception):
+    pass

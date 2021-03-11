@@ -1,0 +1,2 @@
+class CarExistsInTransactionException(Exception):
+    pass
