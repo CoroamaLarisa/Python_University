@@ -1,19 +1,20 @@
 # Python_University
 Project done for the Programming and Algorithm course
 
-Proiectul gestioneaza un Service auto si are urmatoarele functionalitati:
-  1. CRUD mașină: id, model, an achiziție, nr. km, în garanție. Km și anul fabricației să fie
-  strict pozitivi.
-  2. CRUD card client: id, nume, prenume, CNP, data nașterii (dd.mm.yyyy), data înregistrării
-  (dd.mm.yyyy). CNP-ul trebuie să fie unic.
-  3. CRUD tranzacție: id, id_mașină, id_card_client (poate fi nul), sumă piese, sumă
-  manoperă, data și ora. Dacă există un card client, atunci aplicați o reducere de 10%
-  pentru manoperă. Dacă mașina este în garanție, atunci piesele sunt gratis. Se tipărește
-  prețul plătit și reducerile acordate.
-  4. Căutare mașini și clienți după model, an fabricație, prenume, CNP etc. Căutare full text.
-  5. Afișarea tuturor tranzacțiilor cu suma cuprinsă într-un interval dat.
-  6. Afișarea mașinilor ordonate descrescător după suma obținută pe manoperă.
-  7. Afișarea cardurilor client ordonate descrescător după valoarea reducerilor obținute.
-  8. Ștergerea tuturor tranzacțiilor dintr-un anumit interval de zile.
-  9. Actualizarea garanției la fiecare mașină: o mașină este în garanție dacă și numai dacă
-  are maxim 3 ani și maxim 60 000 de km.
+The project manages a Car Service and has the following functionalities:
+  1. CRUD machine: id, model, year of purchase, no. km, under warranty. Km and the year of manufacture to be
+  strictly positive.
+  2. CRUD client card: id, name, surname, CNP, date of birth (dd.mm.yyyy), date of registration
+  (dd.mm.yyyy). The CNP must be unique.
+  3. CRUD transaction: id, machine_id, customer_card_id (can be null), sum parts amount,sum amount
+  labor, date and time. If there is a customer card, then apply a 10% discount
+  for labor. If the car is under warranty, then the parts are free.
+  The price paid and the discounts granted are printed.
+  4. Search for cars and customers by model, year of manufacture, first name, CNP, etc. Full text search.
+  5. Display all transactions with the amount within a given range.
+  6. Display of machines ordered in descending order by the amount obtained on labor.
+  7. Display customer cards ordered in descending order by the value of the discounts obtained.
+  8. Delete all transactions within a certain number of days.
+  9. Upgrading the warranty on each car: a car is under warranty if and only if it
+  has a maximum of 3 years and a maximum of 60,000 km.
+  
